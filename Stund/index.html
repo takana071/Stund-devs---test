@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -253,7 +254,8 @@
     <div class="row">
 
       <!-- Tentang -->
-      <div class="col-lg-4 col-md-6 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4 text-center text-md-start">
+        <img src="assets/img/logo.png" alt="Logo" width="150" class="mb-2">
         <h5 class="text-uppercase">Tentang Kami</h5>
         <p class="small">
           Kami menyediakan layanan digital profesional dengan proses cepat, aman, dan hasil maksimal.
@@ -288,13 +290,22 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Stund Devs 2025</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Service</a>
+                        <a class="link-dark text-decoration-none me-3" 
+   href="javascript:void(0)" 
+   data-bs-toggle="modal" 
+   data-bs-target="#privacyModal">
+   Privacy Policy
+</a>
+                        <a class="link-dark text-decoration-none" 
+   href="javascript:void(0)" 
+   data-bs-toggle="modal" 
+   data-bs-target="#termsModal">
+   Terms of Use
+</a>
+
                     </div>
                 </div>
             </div>
@@ -510,6 +521,60 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Modal Privacy Policy -->
+<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privacyLabel"><i class="fas fa-shield-alt"></i> Privacy Policy</h5>
+        
+      </div>
+      <div class="modal-body text-start">
+        <p>
+          Kami menghargai privasi pengguna. Data yang dikumpulkan hanya digunakan untuk keperluan transaksi dan layanan yang kami tawarkan. Kami tidak akan membagikan atau menjual data pengguna kepada pihak ketiga tanpa persetujuan.
+        </p>
+        <p>
+          Data yang mungkin kami kumpulkan meliputi: nama, nomor WhatsApp, dan detail transaksi. Semua data disimpan secara aman di sistem kami.
+        </p>
+        <p>
+          
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Terms of Use -->
+<div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="termsModalLabel">Terms of Use</h5>
+      </div>
+      <div class="modal-body">
+        <p>
+          Dengan menggunakan layanan kami, pengguna setuju untuk tidak menggunakan produk/jasa kami untuk aktivitas ilegal atau melanggar hukum.
+        </p>
+        <p>Layanan bersifat digital dan tidak dapat dikembalikan. Semua permintaan refund akan dipertimbangkan secara kasus per kasus.
+        </p>
+        <p>
+          Kami berhak menghentikan layanan kepada pengguna yang melanggar aturan tanpa pemberitahuan sebelumnya.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -521,4 +586,3 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
-
